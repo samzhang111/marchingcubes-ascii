@@ -1,0 +1,40 @@
+<html>
+<style>
+    #container {
+        font-family: monospace;
+        font-size: 5px;
+    }
+    #space {
+        min-height: 600px;
+        min-width: 600px;
+        white-space: pre;
+        border: solid 1px black;
+    }
+    #measure {
+        position: absolute;
+        white-space: pre-line;
+        visibility: hidden;
+        height: auto;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    #error{
+        color: red;
+    }
+    </style>
+<body>
+    <div id="container">
+        <div id="space"></div>
+        <span id="measure"></div>
+    </div>
+
+    <input id="equation" type="text" placeholder="y^2 - x*(x - 1)*(x + 1)">
+    <div id="error"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.4.0/math.min.js"></script>
+    <script src="./asciiplot.js"></script>
+</body>
+</html>
