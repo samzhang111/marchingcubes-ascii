@@ -75,57 +75,57 @@ function march(cubefunc) {
                 }
             }
             else if (tl == bl && bl == br && br != tr) {
-                setcoord(i, j, [1, 'o'])
+                setcoord(i, j, [1, '%'])
                 setcoord(i, j + 1, [3, ' '])
                 setcoord(i, j + 2, [3, ' '])
                 setcoord(i, j + 3, [3, ' '])
-                setcoord(i + 1, j, [2, 'o'])
-                setcoord(i + 1, j + 1, [3, 'o'])
-                setcoord(i + 1, j + 2, [1, 'o'])
+                setcoord(i + 1, j, [2, '%'])
+                setcoord(i + 1, j + 1, [3, '%'])
+                setcoord(i + 1, j + 2, [1, '%'])
                 setcoord(i + 1, j + 3, [3, ' '])
             }
             // top and bottom different
             else if (tl == tr && bl == br && tl != bl) {
                 setcoord(i, j, [3, ' '])
-                setcoord(i, j + 1, [3, 'o'])
-                setcoord(i, j + 2, [3, 'o'])
+                setcoord(i, j + 1, [3, '%'])
+                setcoord(i, j + 2, [3, '%'])
                 setcoord(i, j + 3, [3, ' '])
                 setcoord(i + 1, j, [3, ' '])
-                setcoord(i + 1, j + 1, [3, 'o'])
-                setcoord(i + 1, j + 2, [3, 'o'])
+                setcoord(i + 1, j + 1, [3, '%'])
+                setcoord(i + 1, j + 2, [3, '%'])
                 setcoord(i + 1, j + 3, [3, ' '])
             }
             // bl ooo
             else if (tl == tr && tr == br && br != bl) {
                 setcoord(i, j, [3, ' '])
-                setcoord(i, j + 1, [2, 'o'])
-                setcoord(i, j + 2, [3, 'o'])
-                setcoord(i, j + 3, [1, 'o'])
+                setcoord(i, j + 1, [2, '%'])
+                setcoord(i, j + 2, [3, '%'])
+                setcoord(i, j + 3, [1, '%'])
                 setcoord(i + 1, j, [3, ' '])
                 setcoord(i + 1, j + 1, [3, ' '])
                 setcoord(i + 1, j + 2, [3, ' '])
-                setcoord(i + 1, j + 3, [2, 'o'])
+                setcoord(i + 1, j + 3, [2, '%'])
             }
             // tl ooo
             else if (tl != tr && tr == br && br == bl) {
-                setcoord(i, j, [1, 'o'])
-                setcoord(i, j + 1, [3, 'o'])
-                setcoord(i, j + 2, [2, 'o'])
+                setcoord(i, j, [1, '%'])
+                setcoord(i, j + 1, [3, '%'])
+                setcoord(i, j + 2, [2, '%'])
                 setcoord(i, j + 3, [3, ' '])
-                setcoord(i + 1, j, [2, 'o'])
+                setcoord(i + 1, j, [2, '%'])
                 setcoord(i + 1, j + 1, [3, ' '])
                 setcoord(i + 1, j + 2, [3, ' '])
                 setcoord(i + 1, j + 3, [3, ' '])
             }
             // tr ooo
             else if (tl == bl && bl == br && br != tr) {
-                setcoord(i, j, [1, 'o'])
+                setcoord(i, j, [1, '%'])
                 setcoord(i, j + 1, [3, ' '])
                 setcoord(i, j + 2, [3, ' '])
                 setcoord(i, j + 3, [3, ' '])
-                setcoord(i + 1, j, [2, 'o'])
-                setcoord(i + 1, j + 1, [3, 'o'])
-                setcoord(i + 1, j + 2, [1, 'o'])
+                setcoord(i + 1, j, [2, '%'])
+                setcoord(i + 1, j + 1, [3, '%'])
+                setcoord(i + 1, j + 2, [1, '%'])
                 setcoord(i + 1, j + 3, [3, ' '])
 
             }
@@ -134,35 +134,35 @@ function march(cubefunc) {
                 setcoord(i, j, [3, ' '])
                 setcoord(i, j + 1, [3, ' '])
                 setcoord(i, j + 2, [3, ' '])
-                setcoord(i, j + 3, [1, 'o'])
+                setcoord(i, j + 3, [1, '%'])
                 setcoord(i + 1, j, [3, ' '])
-                setcoord(i + 1, j + 1, [1, 'o'])
-                setcoord(i + 1, j + 2, [3, 'o'])
-                setcoord(i + 1, j + 3, [2, 'o'])
+                setcoord(i + 1, j + 1, [1, '%'])
+                setcoord(i + 1, j + 2, [3, '%'])
+                setcoord(i + 1, j + 3, [2, '%'])
 
             }
             // vert
             else if (tl == bl && tr == br && tl != tr) {
-                setcoord(i, j, [1, 'o'])
-                setcoord(i, j + 1, [1, 'o'])
-                setcoord(i, j + 2, [1, 'o'])
-                setcoord(i, j + 3, [1, 'o'])
-                setcoord(i + 1, j, [2, 'o'])
-                setcoord(i + 1, j + 1, [2, 'o'])
-                setcoord(i + 1, j + 2, [2, 'o'])
-                setcoord(i + 1, j + 3, [2, 'o'])
+                setcoord(i, j, [1, '%'])
+                setcoord(i, j + 1, [1, '%'])
+                setcoord(i, j + 2, [1, '%'])
+                setcoord(i, j + 3, [1, '%'])
+                setcoord(i + 1, j, [2, '%'])
+                setcoord(i + 1, j + 1, [2, '%'])
+                setcoord(i + 1, j + 2, [2, '%'])
+                setcoord(i + 1, j + 3, [2, '%'])
             }
             else {
             console.log(i, j, tl, bl, tr, br);
 
-                setcoord(i, j, [3, 'o'])
-                setcoord(i, j + 1, [3, 'o'])
-                setcoord(i, j + 2, [3, 'o'])
-                setcoord(i, j + 3, [3, 'o'])
-                setcoord(i + 1, j, [3, 'o'])
-                setcoord(i + 1, j + 1, [3, 'o'])
-                setcoord(i + 1, j + 2, [3, 'o'])
-                setcoord(i + 1, j + 3, [3, 'o'])
+                setcoord(i, j, [3, '%'])
+                setcoord(i, j + 1, [3, '%'])
+                setcoord(i, j + 2, [3, '%'])
+                setcoord(i, j + 3, [3, '%'])
+                setcoord(i + 1, j, [3, '%'])
+                setcoord(i + 1, j + 1, [3, '%'])
+                setcoord(i + 1, j + 2, [3, '%'])
+                setcoord(i + 1, j + 3, [3, '%'])
             }
         }
     }
